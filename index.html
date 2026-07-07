@@ -1,208 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aroma Market</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Aroma Market</a>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Aroma Market</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#diagrama">Diagrama</a></li>
-            <li class="nav-item"><a class="nav-link" href="#formularios">Formularios</a></li>
-          </ul>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="usuarios.html">Usuarios</a></li>
+                <li class="nav-item"><a class="nav-link" href="vendedores.html">Vendedores</a></li>
+                <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="pedidos.html">Pedidos</a></li>
+            </ul>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/img/hero-cafe.png" class="d-block w-100" alt="Cafe">
-          <div class="carousel-caption">
-            <h1>Tienda de cafe</h1>
-            <p>Cafe, panaderia y regalos.</p>
-          </div>
+<main class="container my-4">
+    <div id="carrusel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <img src="img/img1.png" class="d-block w-100 hero-img" alt="Cafe">
+            </div>
+            <div class="carousel-item">
+                <img src="img/img2.png" class="d-block w-100 hero-img" alt="Regalos">
+            </div>
+            <div class="carousel-item">
+                <img src="img/img3.png" class="d-block w-100 hero-img" alt="Panaderia">
+            </div>
         </div>
-        <div class="carousel-item">
-          <img src="assets/img/hero-panaderia.png" class="d-block w-100" alt="Panaderia">
-          <div class="carousel-caption">
-            <h2>Panaderia artesanal</h2>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/hero-regalos.png" class="d-block w-100" alt="Regalos">
-          <div class="carousel-caption">
-            <h2>Kits de regalo</h2>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
 
-    <main class="container my-5">
-      <section id="productos">
-        <h2>Productos</h2>
-        <div class="row g-3">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="assets/img/hero-cafe.png" class="card-img-top" alt="Cafe">
-              <div class="card-body">
-                <h3 class="h5">Cafe 500g</h3>
-                <p>$185</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="assets/img/hero-panaderia.png" class="card-img-top" alt="Croissants">
-              <div class="card-body">
-                <h3 class="h5">Croissants</h3>
-                <p>$210</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="assets/img/hero-regalos.png" class="card-img-top" alt="Kit">
-              <div class="card-body">
-                <h3 class="h5">Kit barista</h3>
-                <p>$420</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <h1 class="text-center">Tienda de cafe Aroma Market</h1>
+    <p class="text-center">Proyecto simple con HTML, PHP, MySQL y Bootstrap.</p>
 
-      <section id="diagrama" class="my-5">
+    <div class="caja">
         <h2>Diagrama de flujo</h2>
-        <p>usuarios inicia sesion y puede hacer pedidos.</p>
+        <p>usuarios inicia sesion.</p>
         <p>vendedores se relaciona con productos por id_vendedor.</p>
         <p>pedidos se relaciona con usuarios, vendedores y productos por id_usuario, id_vendedor e id_producto.</p>
-        <p>usuarios + vendedores -> productos -> pedidos</p>
-      </section>
+        <p><strong>usuarios + vendedores -> productos -> pedidos</strong></p>
+    </div>
 
-      <section id="formularios" class="my-5">
-        <h2>Formularios PHP</h2>
+    <div class="row g-3 mt-3">
+        <div class="col-md-3"><a class="btn btn-dark w-100" href="usuarios.html">Registrar usuario</a></div>
+        <div class="col-md-3"><a class="btn btn-dark w-100" href="vendedores.html">Registrar vendedor</a></div>
+        <div class="col-md-3"><a class="btn btn-dark w-100" href="productos.html">Registrar producto</a></div>
+        <div class="col-md-3"><a class="btn btn-dark w-100" href="pedidos.html">Registrar pedido</a></div>
+    </div>
+</main>
 
-        <div class="row g-4">
-          <div class="col-md-6">
-            <h3>Inicio de sesion</h3>
-            <form action="php/login.php" method="post">
-              <input class="form-control mb-2" name="correo_usuario" placeholder="Correo" value="cliente@demo.com">
-              <input class="form-control mb-2" name="telefono_usuario" placeholder="Telefono" value="5559991010">
-              <button class="btn btn-dark">Entrar</button>
-            </form>
-          </div>
-
-          <div class="col-md-6">
-            <h3>Mostrar tabla</h3>
-            <form action="php/mostrar.php" method="get">
-              <select class="form-select mb-2" name="tabla">
-                <option value="usuarios">usuarios</option>
-                <option value="vendedores">vendedores</option>
-                <option value="productos">productos</option>
-                <option value="pedidos">pedidos</option>
-              </select>
-              <button class="btn btn-dark">Mostrar</button>
-            </form>
-          </div>
-
-          <div class="col-md-6">
-            <h3>Registrar usuario</h3>
-            <form action="php/registrar.php" method="post">
-              <input type="hidden" name="tabla" value="usuarios">
-              <input class="form-control mb-2" name="nombre_usuario" placeholder="Nombre">
-              <input class="form-control mb-2" name="apellido_usuario" placeholder="Apellido">
-              <input class="form-control mb-2" name="telefono_usuario" placeholder="Telefono">
-              <input class="form-control mb-2" name="edad_usuario" placeholder="Edad">
-              <input class="form-control mb-2" name="correo_usuario" placeholder="Correo">
-              <button class="btn btn-dark">Registrar</button>
-            </form>
-          </div>
-
-          <div class="col-md-6">
-            <h3>Registrar vendedor</h3>
-            <form action="php/registrar.php" method="post">
-              <input type="hidden" name="tabla" value="vendedores">
-              <input class="form-control mb-2" name="nombre_vendedor" placeholder="Nombre">
-              <input class="form-control mb-2" name="apellido_vendedor" placeholder="Apellido">
-              <input class="form-control mb-2" name="telefono_vendedor" placeholder="Telefono">
-              <input class="form-control mb-2" name="correo_vendedor" placeholder="Correo">
-              <input class="form-control mb-2" name="edad_vendedor" placeholder="Edad">
-              <button class="btn btn-dark">Registrar</button>
-            </form>
-          </div>
-
-          <div class="col-md-6">
-            <h3>Registrar producto</h3>
-            <form action="php/registrar.php" method="post">
-              <input type="hidden" name="tabla" value="productos">
-              <input class="form-control mb-2" name="id_vendedor" placeholder="ID vendedor">
-              <input class="form-control mb-2" name="nombre_producto" placeholder="Producto">
-              <input class="form-control mb-2" name="categoria_producto" placeholder="Categoria">
-              <input class="form-control mb-2" name="precio_producto" placeholder="Precio">
-              <button class="btn btn-dark">Registrar</button>
-            </form>
-          </div>
-
-          <div class="col-md-6">
-            <h3>Registrar pedido</h3>
-            <form action="php/registrar.php" method="post">
-              <input type="hidden" name="tabla" value="pedidos">
-              <input class="form-control mb-2" name="id_producto" placeholder="ID producto">
-              <input class="form-control mb-2" name="id_usuario" placeholder="ID usuario">
-              <input class="form-control mb-2" name="id_vendedor" placeholder="ID vendedor">
-              <button class="btn btn-dark">Registrar</button>
-            </form>
-          </div>
-
-          <div class="col-md-6">
-            <h3>Actualizar producto</h3>
-            <form action="php/actualizar.php" method="post">
-              <input class="form-control mb-2" name="id_producto" placeholder="ID producto">
-              <input class="form-control mb-2" name="nombre_producto" placeholder="Nuevo nombre">
-              <input class="form-control mb-2" name="categoria_producto" placeholder="Nueva categoria">
-              <input class="form-control mb-2" name="precio_producto" placeholder="Nuevo precio">
-              <button class="btn btn-dark">Actualizar</button>
-            </form>
-          </div>
-
-          <div class="col-md-6">
-            <h3>Eliminar registro</h3>
-            <form action="php/eliminar.php" method="post">
-              <select class="form-select mb-2" name="tabla">
-                <option value="usuarios">usuarios</option>
-                <option value="vendedores">vendedores</option>
-                <option value="productos">productos</option>
-                <option value="pedidos">pedidos</option>
-              </select>
-              <input class="form-control mb-2" name="id" placeholder="ID">
-              <button class="btn btn-danger">Eliminar</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="bg-dark text-white text-center p-3">
-      Aroma Market - Proyecto PHP, MySQL, HTML y Bootstrap
-    </footer>
-
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+<footer>Aroma Market Escolar</footer>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

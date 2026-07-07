@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Aroma Market</a>
+        <div><a class="nav-link text-white" href="m_productos.php">Lista productos</a></div>
+    </div>
+</nav>
+<main class="container my-4">
+    <div class="caja">
+        <h1>Registrar producto</h1>
+        <form action="reg_producto.php" method="POST">
+            <input class="form-control mb-2" name="id_vendedor" placeholder="ID vendedor">
+            <input class="form-control mb-2" name="nombre_producto" placeholder="Producto">
+            <input class="form-control mb-2" name="categoria_producto" placeholder="Categoria">
+            <input class="form-control mb-2" name="precio_producto" placeholder="Precio">
+            <button class="btn btn-dark">Guardar</button>
+        </form>
+    </div>
+</main>
+<footer>Aroma Market</footer>
+</body>
+</html>
