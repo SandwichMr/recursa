@@ -1,0 +1,14 @@
+.carousel-item img {
+  height: 420px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
