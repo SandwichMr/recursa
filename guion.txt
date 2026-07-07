@@ -1,0 +1,21 @@
+Hola, en este video voy a explicar mi proyecto llamado Aroma Market.
+
+Es una pagina simple de una tienda de cafe, panaderia y regalos. El proyecto esta organizado parecido al ejemplo: tiene archivos HTML para las paginas, archivos PHP para las consultas, una carpeta css para estilos, una carpeta img para imagenes y Bootstrap instalado en node_modules.
+
+La pagina principal es index.html. Aqui se muestra la navbar, el carrusel con imagenes, una explicacion del diagrama de flujo y botones para registrar usuarios, vendedores, productos y pedidos.
+
+La base de datos se llama recursa_p y esta en el archivo recursa.sql. Tiene cuatro tablas principales: usuarios, vendedores, productos y pedidos.
+
+La relacion es la siguiente: un vendedor puede tener productos, por eso productos tiene el campo id_vendedor. Un pedido se relaciona con un usuario, un vendedor y un producto usando id_usuario, id_vendedor e id_producto. Estas relaciones estan hechas con llaves foraneas.
+
+Para registrar datos uso archivos que empiezan con reg_. Por ejemplo, reg_usuario.php guarda usuarios con INSERT INTO, y reg_producto.php guarda productos.
+
+Para mostrar datos uso archivos que empiezan con m_. Por ejemplo, m_usuarios.php y m_productos.php usan SELECT * FROM para mostrar los registros en una tabla.
+
+Para actualizar datos uso archivos que empiezan con upd_. Estos usan UPDATE junto con WHERE para modificar solo el registro seleccionado.
+
+Para eliminar datos uso archivos que empiezan con del_. Estos usan DELETE FROM junto con WHERE para borrar el registro elegido.
+
+El proyecto no usa librerias externas de PHP ni de MySQL. Las consultas estan hechas de forma simple con mysqli_connect y mysqli_query.
+
+En resumen, el proyecto cumple con tener una pagina HTML con diseno, Bootstrap, navbar, footer, carrusel, imagenes, cuatro tablas relacionadas en MySQL y archivos PHP separados para registrar, mostrar, actualizar y eliminar datos.
